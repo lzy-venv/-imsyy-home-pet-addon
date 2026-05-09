@@ -5,7 +5,7 @@
 
 ## 预览:
 Preview:
-![Preview](https://github.com/lzy-venv/-imsyy-home-pet-addon/blob/main/pet-preview.gif)
+![Preview](pet-preview.gif)
 
 
 
