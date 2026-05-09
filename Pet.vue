@@ -29,6 +29,10 @@ let slideProgress = 0;
 const STILL_THRESHOLD = 4000;
 const SLIDE_DURATION = 800;
 
+
+const name_words= '我是XXX';
+
+
 function showBubble(text) {
   clearTimeout(bubbleTimer);
   bubbleText.value = text;
@@ -55,6 +59,8 @@ function updatePet(pet, targetX, targetY, el, imgEl) {
   const stopDist = 150;
   const friction = 0.92;
   const inertiaFactor = 0.15;
+  const lost_words= '糟了...跟丢了';
+  const find_words= '原来你在这里';
 
   if (pet.isLost) {
     pet.vx *= friction;
@@ -74,7 +80,7 @@ function updatePet(pet, targetX, targetY, el, imgEl) {
         pet.isWaiting = false;
         pet.isRunning = true;
         if (Date.now() - pet.lastBubbleTime > 3000) {
-          showBubble('原来你在这里');
+          showBubble(find_words);
           pet.lastBubbleTime = Date.now();
         }
       }, waitTime);
@@ -120,7 +126,7 @@ function updatePet(pet, targetX, targetY, el, imgEl) {
 
       if (pet.flipCount >= 3 && !pet.isLost) {
         pet.isLost = true;
-        showBubble('糟了...跟丢了');
+        showBubble(lost_words);
 
         pet.lostTimer = setTimeout(() => {
           pet.isLost = false;
@@ -149,7 +155,7 @@ function updatePet(pet, targetX, targetY, el, imgEl) {
 
       if (pet.flipCount >= 3 && !pet.isLost) {
         pet.isLost = true;
-        showBubble('糟了...跟丢了');
+        showBubble(lost_words);
 
         pet.lostTimer = setTimeout(() => {
           pet.isLost = false;
@@ -245,7 +251,7 @@ onMounted(() => {
   loop();
 
   setTimeout(() => {
-    showBubble('嗨! 我是洛秋雨');
+    showBubble(name_words);
   }, 500);
 });
 
