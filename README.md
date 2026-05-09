@@ -1,14 +1,31 @@
 # imsyy/home pet add-on
-A mouse pet add-on for imsyy/home   一个基于imsyy/home项目的鼠标宠物插件
+---
+## 一个基于imsyy/home项目的鼠标宠物插件
+## A mouse pet add-on for imsyy/home
+
+## 预览:
+Preview:
+![Preview](pet-preview.gif)
 
 
 
 
 
 
+## 宠物机制介绍:
+Introduction to the Pet Mechanics
 
+  * 离鼠标很远时：它会原地愣住一会，然后再开始跑。    When far away from the mouse: it will freeze in place for a while before starting to run.
+  * 离鼠标较近时：它会慢悠悠地溜达过来。            When close to the mouse: it will sneak slowly.
+  * 到了鼠标身边：它会乖乖停下来。                 When you get to the mouse: it will stop obediently.
+  * 朝向变化：宠物会根据鼠标位置自动翻转朝向。       Orientation Change: The pet will automatically flip the orientation based on the mouse position.
+  * 惯性效果：宠物移动时会有平滑的加速减速效果。     Inertia effect: The pet will have a smooth acceleration and deceleration effect when moving.
+  * 个性气泡：跑步时会说"原来你跑到这里来了"，跟丢鼠标时会说"糟了...跟丢了"。     Personality bubbles: When running, you will say "So you came here", and when you lose the mouse, you will say "Oh no... I lost it."
 
+## 属性更改:
+  ```vue
 
+  ```
 ### 插件安装说明:
 ---
 
