@@ -5,7 +5,7 @@
 
 ## 预览:
 Preview:
-![Preview](pet-preview.gif)
+![Preview](pet-preview2.gif)
 
 
 
